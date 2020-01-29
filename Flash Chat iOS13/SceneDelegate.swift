@@ -1,10 +1,11 @@
- // 
-//  SceneDelegate.swift
+//
+//  RegisterViewController.swift
 //  Flash Chat iOS13
 //
-//  Created by Angela Yu on 21/10/2019.
-//  Copyright © 2019 Angela Yu. All rights reserved.
+//  Created by Vaibhav Bisht on 29/01/2020.
+//  Copyright © 2020 Coding Blocks All rights reserved.
 //
+
 
 import UIKit
 
