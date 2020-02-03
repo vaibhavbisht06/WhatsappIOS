@@ -23,7 +23,7 @@ class RegisterViewController: UIViewController {
                 print(e)
             } else{
                 //Navigate to Chat Screen
-                self.performSegue(withIdentifier: "rsToCs", sender: self)
+                self.performSegue(withIdentifier: const.registerToChat, sender: self)
             }
         }
       }

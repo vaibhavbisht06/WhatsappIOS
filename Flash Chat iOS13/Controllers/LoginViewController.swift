@@ -21,7 +21,7 @@ class LoginViewController: UIViewController {
                 if let e = error {
                     print(e)
                 } else {
-                    self.performSegue(withIdentifier: "lsToCs", sender: self)
+                    self.performSegue(withIdentifier: const.loginToChat, sender: self)
                 }
             }
         }
