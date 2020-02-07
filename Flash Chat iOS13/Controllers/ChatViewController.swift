@@ -54,3 +54,8 @@ extension ChatViewController : UITableViewDataSource {
         return cell
     }
 }
+extension ChatViewController : UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
+    }
+}
