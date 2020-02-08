@@ -25,7 +25,10 @@ class ChatViewController: UIViewController {
         tableView.dataSource = self
         title = "⚡️FlashChat"
         navigationItem.hidesBackButton = true
+
+        tableView.register(UINib(nibName: const.cellNibName, bundle: nil ), forCellReuseIdentifier: const.cellIdentifier)
     }
+    
     
     @IBAction func sendPressed(_ sender: UIButton) {
     }
@@ -49,8 +52,8 @@ extension ChatViewController : UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: const.cellIdentifier, for: indexPath)
-        cell.textLabel?.text = messages[indexPath.row].body
+        let cell = tableView.dequeueReusableCell(withIdentifier: const.cellIdentifier, for: indexPath) as! MessageCell
+        cell.label.text = messages[indexPath.row].body
         return cell
     }
 }
