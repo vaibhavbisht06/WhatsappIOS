@@ -10,21 +10,21 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="59" id="KGk-i7-Jjw" customClass="MessageCell" customModule="Flash_Chat_iOS13" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="321" height="59"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="67" id="KGk-i7-Jjw" customClass="MessageCell" customModule="Flash_Chat_iOS13" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="314" height="67"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="321" height="59"/>
+                <rect key="frame" x="0.0" y="0.0" width="314" height="67"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DnR-XL-g75">
-                        <rect key="frame" x="0.0" y="0.0" width="304" height="60"/>
+                        <rect key="frame" x="0.0" y="0.0" width="314" height="70"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OXJ-so-NLs">
-                                <rect key="frame" x="10" y="10" width="244" height="40"/>
+                                <rect key="frame" x="10" y="10" width="244" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNx-GW-rf5">
-                                        <rect key="frame" x="10" y="10" width="224" height="20"/>
+                                        <rect key="frame" x="10" y="10" width="224" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -47,10 +47,14 @@
                             </imageView>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="L7f-I8-IS2" firstAttribute="leading" secondItem="OXJ-so-NLs" secondAttribute="trailing" constant="10" id="3zH-a7-12o"/>
                             <constraint firstItem="OXJ-so-NLs" firstAttribute="top" secondItem="DnR-XL-g75" secondAttribute="top" constant="10" id="Lxj-jq-6OS"/>
                             <constraint firstAttribute="bottom" secondItem="OXJ-so-NLs" secondAttribute="bottom" constant="10" id="N0b-1W-1ND"/>
                             <constraint firstItem="L7f-I8-IS2" firstAttribute="leading" secondItem="OXJ-so-NLs" secondAttribute="trailing" constant="10" id="aaT-v5-290"/>
                             <constraint firstItem="OXJ-so-NLs" firstAttribute="leading" secondItem="DnR-XL-g75" secondAttribute="leading" constant="10" id="d7j-6c-brM"/>
+                            <constraint firstItem="L7f-I8-IS2" firstAttribute="top" secondItem="DnR-XL-g75" secondAttribute="top" constant="10" id="fRz-Lc-unv"/>
+                            <constraint firstAttribute="bottom" secondItem="L7f-I8-IS2" secondAttribute="bottom" constant="15" id="kiv-w4-dyn"/>
+                            <constraint firstAttribute="trailing" secondItem="L7f-I8-IS2" secondAttribute="trailing" constant="10" id="t4W-xI-DzD"/>
                         </constraints>
                     </stackView>
                 </subviews>
@@ -61,7 +65,7 @@
                 <outlet property="messageBubble" destination="OXJ-so-NLs" id="LPh-ax-znL"/>
                 <outlet property="rightImageView" destination="L7f-I8-IS2" id="Gcm-DN-c1M"/>
             </connections>
-            <point key="canvasLocation" x="129.71014492753625" y="129.57589285714286"/>
+            <point key="canvasLocation" x="136.23188405797103" y="155.69196428571428"/>
         </tableViewCell>
     </objects>
     <resources>
